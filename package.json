@@ -1,0 +1,57 @@
+{
+  "name": "@beatsphere/expo-apple-music-kit",
+  "version": "0.1.0",
+  "description": "Expo native module for Apple MusicKit — authorization, now playing, playback state, and Apple Music REST API utilities for iOS and Android.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "src/",
+    "app.plugin.js",
+    "expo-module.config.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "keywords": [
+    "expo",
+    "apple-music",
+    "musickit",
+    "react-native",
+    "now-playing",
+    "music",
+    "streaming",
+    "ios",
+    "android"
+  ],
+  "author": "BeatSphere <hello@beatsphere.app>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beatsphere/expo-apple-music-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Beatsphere/expo-apple-music-kit/issues"
+  },
+  "homepage": "https://github.com/Beatsphere/expo-apple-music-kit#readme",
+  "peerDependencies": {
+    "expo": ">=51.0.0",
+    "expo-modules-core": ">=1.0.0",
+    "react": ">=18.0.0",
+    "react-native": ">=0.73.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-async-storage/async-storage": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "expo-modules-core": "^2.3.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,7 @@
+src/
+tsconfig.json
+.gitignore
+.DS_Store
+*.tsbuildinfo
+node_modules/
+android/build/

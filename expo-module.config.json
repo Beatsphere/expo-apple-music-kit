@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["ExpoAppleMusicKitModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.applemusickit.ExpoAppleMusicKitModule"]
+  }
+}
