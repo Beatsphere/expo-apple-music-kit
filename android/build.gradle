@@ -60,8 +60,13 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.majorVersion
+    // `kotlinOptions` is added to `android` by the kotlin-android plugin. Under
+    // AGP 9's built-in Kotlin it does not exist, and the Kotlin JVM target
+    // follows compileOptions.targetCompatibility above, so nothing is needed.
+    if (project.android.extensions.findByName('kotlinOptions') != null) {
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_17.majorVersion
+        }
     }
 }
 
