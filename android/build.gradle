@@ -51,8 +51,9 @@ android {
         }
     }
 
-    lintOptions {
-        abortOnError false
+    // `lint` replaced `lintOptions` in AGP 7; the old name is gone from AGP 9's DSL.
+    lint {
+        abortOnError = false
     }
 
     compileOptions {
